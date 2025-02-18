@@ -262,30 +262,41 @@ body {
 
 
 /* ✅ RESPONSIVE - MOBILE VIEW */
+.team-container {
+  padding: 0; /* Removed padding */
+  background: white !important; /* Ensure white background */
+  color: black !important; /* Ensure text is black */
+}
+
 @media (max-width: 768px) {
   .team-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2.5rem; /* Increase spacing between cards */
   }
 
   .team-card {
-    width: 80%;
+    width: 90%; /* Make it occupy most of the width */
+    max-width: 500px; /* Increase max width */
+    padding: 0; /* Removed extra padding */
+    border-radius: 25px; /* Smooth corners */
   }
-}
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 8px;
-}
+  .profile-image {
+    width: 100%; /* Ensure image takes full width */
+    max-width: 350px; /* Increase max width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Round corners */
+  }
 
-.social-icon {
-  font-size: 24px;
-  color: black;
-  transition: color 0.3s ease-in-out;
-}
+  .social-icons {
+    gap: 25px; /* Increase gap for better spacing */
+  }
+
+  .social-icon {
+    font-size: 28px; /* Increase icon size */
+  }
 
 .social-icon:hover {
   color: #0077b5; /* LinkedIn blue */
@@ -297,4 +308,5 @@ body {
 
 .linkedin:hover {
   color: #0077b5; /* LinkedIn blue */
+}
 }

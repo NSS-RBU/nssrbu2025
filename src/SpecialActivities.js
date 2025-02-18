@@ -62,7 +62,7 @@ function EventSlider({ images }) {
   );
 }
 
-function App() {
+function SpecialActivities() {
   return (
     <div>
       <Navbar />
@@ -87,4 +87,4 @@ function App() {
   );
 }
 
-export default App;
+export default SpecialActivities;

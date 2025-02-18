@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+.event-container {
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.boom-effect {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  animation: pop-in 1s ease-in-out;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  animation: fade-in 1.5s ease-in-out;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.register-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-event {
+  background: #007bff;
+  color: white;
+}
+
+.btn-activity {
+  background: #28a745;
+  color: white;
+}
+
+.register-btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-event:hover {
+  background: #0056b3;
+}
+
+.btn-activity:hover {
+  background: #1e7e34;
+}
+
+/* Animations */
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
