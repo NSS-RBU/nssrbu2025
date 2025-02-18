@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+.event-page {
+  padding: 3rem;
+  text-align: center;
+  background-color: #f4f4f9;  /* Light background */
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.event-page.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+select {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Event Image Styles */
+.event-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Specific Domain Styles */
+.education {
+  background-color: #f1f8e9; /* Light Green */
+  color: #2c6e49;
+}
+
+.health {
+  background-color: #e8f5e9; /* Light Green for health */
+  color: #388e3c;
+}
+
+.innovation {
+  background-color: #e3f2fd; /* Light Blue */
+  color: #1976d2;
+}
+
+.society {
+  background-color: #fff3e0; /* Light Orange */
+  color: #fb8c00;
+}
+
+.environment {
+  background-color: #e8f5e9; /* Light Green for environment */
+  color: #388e3c;
+}
+
+.rural {
+  background-color: #ffebee; /* Light Red for Rural */
+  color: #d32f2f;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .event-page {
+    padding: 1rem;
+  }
+
+  select,
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .event-image {
+    width: 80%;
+    max-width: 100%;
+  }
+}
