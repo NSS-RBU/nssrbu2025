@@ -8,35 +8,16 @@ import NSSFooter from "./NSSFooter.js";
 
 const events = [
   {
-    name: 'INDEPENDENCE DAY',
+    name: 'PRERNA 16.0',
     images: [
-      "https://media.istockphoto.com/id/1497811046/photo/a-doctor-and-her-assistant-doctor-engaged-in-a-conversation-with-family-members-of-a-village.jpg?s=612x612&w=0&k=20&c=tlxfJh1vYnm5PrnHvID4vdxnrqXmjpiinIxhgM5UrSY=",
-      "https://media.istockphoto.com/id/1125843699/photo/real-estate-agent-with-group-of-villagers.jpg?s=612x612&w=0&k=20&c=E0EpqKdr4v59EMB1hfevF1QcwELQk0dvekJyLfIrpq0=",
-      "https://media.istockphoto.com/id/1318617341/photo/low-angle-view-group-of-volunteers-busy-working-by-arranging-vegetables-and-clothes-on.jpg?s=612x612&w=0&k=20&c=CJsDJ1nIMKr5NPBQufc5eyjsbSV_3XhqgcQusavGXIk=",
+      "https://res.cloudinary.com/daxr191iv/image/upload/f_auto,q_auto/ch3.jpg",
+      "https://res.cloudinary.com/daxr191iv/image/upload/f_auto,q_auto/ch1.jpg",
+      "https://res.cloudinary.com/daxr191iv/image/upload/f_auto,q_auto/ch15.jpg",
+      "https://res.cloudinary.com/daxr191iv/image/upload/f_auto,q_auto/ch5.jpg"
     ],
-    description1: 'A patriotic event celebrating India’s independence with cultural programs and flag hoisting.',
-    description2: 'Students and faculty participate in speeches, dances, and community service initiatives.',
-  },
-  {
-    name: 'YOGA DAY',
-    images: [
-      "https://media.istockphoto.com/id/1497811046/photo/a-doctor-and-her-assistant-doctor-engaged-in-a-conversation-with-family-members-of-a-village.jpg?s=612x612&w=0&k=20&c=tlxfJh1vYnm5PrnHvID4vdxnrqXmjpiinIxhgM5UrSY=",
-      "https://media.istockphoto.com/id/1125843699/photo/real-estate-agent-with-group-of-villagers.jpg?s=612x612&w=0&k=20&c=E0EpqKdr4v59EMB1hfevF1QcwELQk0dvekJyLfIrpq0=",
-      "https://media.istockphoto.com/id/1318617341/photo/low-angle-view-group-of-volunteers-busy-working-by-arranging-vegetables-and-clothes-on.jpg?s=612x612&w=0&k=20&c=CJsDJ1nIMKr5NPBQufc5eyjsbSV_3XhqgcQusavGXIk=",
-    ],
-    description1: 'Promoting health and wellness through yoga sessions conducted by trained professionals.',
-    description2: 'People of all ages join together to practice mindfulness and improve their physical well-being.',
-  },
-  {
-    name: 'REPUBLIC DAY',
-    images: [
-      "https://media.istockphoto.com/id/1497811046/photo/a-doctor-and-her-assistant-doctor-engaged-in-a-conversation-with-family-members-of-a-village.jpg?s=612x612&w=0&k=20&c=tlxfJh1vYnm5PrnHvID4vdxnrqXmjpiinIxhgM5UrSY=",
-      "https://media.istockphoto.com/id/1125843699/photo/real-estate-agent-with-group-of-villagers.jpg?s=612x612&w=0&k=20&c=E0EpqKdr4v59EMB1hfevF1QcwELQk0dvekJyLfIrpq0=",
-      "https://media.istockphoto.com/id/1318617341/photo/low-angle-view-group-of-volunteers-busy-working-by-arranging-vegetables-and-clothes-on.jpg?s=612x612&w=0&k=20&c=CJsDJ1nIMKr5NPBQufc5eyjsbSV_3XhqgcQusavGXIk=",
-    ],
-    description1: 'Commemorating the adoption of the Indian Constitution with parades and cultural programs.',
-    description2: 'A day filled with patriotic fervor, music, and awareness drives about citizens’ responsibilities.',
-  },
+    description1: 'Prerna is an inspiring event aimed at motivating individuals to take action for social causes.',
+    description2: 'It brings together speakers and volunteers to create awareness and drive change in the community.',
+  }
 ];
 
 function EventSlider({ images }) {
@@ -76,6 +57,7 @@ function SpecialActivities() {
             <h3 className="event-name">{event.name}</h3>
             <p className="event-description">{event.description1}</p>
             <p className="event-description">{event.description2}</p>
+            <button className="event-report-btn">Event Report</button>
           </div>
         </div>        
         ))}
